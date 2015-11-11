@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>adb-tcp-quick tray app</title>
+  <meta name="description" content="Tray app to (dis)connect your Android devices via tcp">
+  <meta name="author" content="@Urucas">
+
+  <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+  
+  <script src="angular/angular.min.js"></script>
+  
+  <script src="bootstrap/dist/js/bootstrap.min.js"></script>
+
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+
+
+</head>
+
+<body ng-controler="AppController">
+  <h1>Hello</h1>
+  <div class="preloader" ng-show="preloader.show == true">
+    <p>{{preloader.msg}}<br /><i class="fa fa-spin fa-gear"></i></p>
+  </div>
+
+  <script src="js/controller.js"></script>
+</body>
+</html>
