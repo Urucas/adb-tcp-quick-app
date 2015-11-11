@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" ng-app="App">
 <head>
   <meta charset="utf-8">
 
@@ -20,9 +20,8 @@
 </head>
 
 <body ng-controler="AppController">
-  <h1>Hello</h1>
   <div class="preloader" ng-show="preloader.show == true">
-    <p>{{preloader.msg}}<br /><i class="fa fa-spin fa-gear"></i></p>
+    <p>{{locale.loading_app}}<br /><i class="fa fa-spin fa-gear"></i></p>
   </div>
 
   <script src="js/controller.js"></script>
